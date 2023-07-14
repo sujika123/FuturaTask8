@@ -29,7 +29,6 @@ class notificationform(forms.ModelForm):
 
 
 class StdntComplaintForm(forms.ModelForm):
-    # date = forms.DateField(widget=DateInput)
 
     class Meta:
         model = StdntComplaint
