@@ -19,8 +19,7 @@
                       <thead>
                         <tr>
                            <th scope="col">SI No</th>
-                           <th scope="col">Type</th>
-                           <th scope="col">Username</th>
+                            <th scope="col">Username</th>
                            <th scope="col">Subject</th>
                            <th scope="col">Complaint</th>
                            <th scope="col">Date</th>
@@ -31,13 +30,7 @@
                       {% for i in complaint %}
                         <tr>
                           <th scope="row">{{forloop.counter}}</th>
-                      <td>
-                        {% if i.user.is_teacher == True %}
-                        <p>Teacher</p>
-                        {% elif i.user.is_student == True %}
-                        <p>Student</p>
-                        {% endif %}
-                    </td>
+
                     <td>{{i.user}}</td>
                     <td>{{i.subject}}</td>
                     <td>{{i.complaint}}</td>
